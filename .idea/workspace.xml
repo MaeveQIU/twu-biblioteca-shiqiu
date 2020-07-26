@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d4bd269-1c78-4811-bf2d-6632b5b72e35" name="Default Changelist" comment="" />
+    <list default="true" id="38dedb72-0c0e-49cf-83e4-af2fc9073685" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BookList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BookListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TWU_Biblioteca-master.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1f8VFxpcts4j493v0KqQzEgWyqT" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fAV9Ihx1P3kvLfDRlMBW25sSdB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,7 +39,120 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.twu.biblioteca" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/twu/biblioteca" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.twu.biblioteca" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BookListTest">
+    <configuration name="BookList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookList" />
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookListTest.should_contain_author_and_year_on_books" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookListTest" />
+      <option name="METHOD_NAME" value="should_contain_author_and_year_on_books" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookListTest.should_display_three_books_after_return_one" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookListTest" />
+      <option name="METHOD_NAME" value="should_display_three_books_after_return_one" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookListTest.should_display_three_default_books_after_initialization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookListTest" />
+      <option name="METHOD_NAME" value="should_display_three_default_books_after_initialization" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.BookListTest.should_display_three_books_after_return_one" />
+      <item itemvalue="JUnit.BookListTest" />
+      <item itemvalue="JUnit.BookListTest.should_contain_author_and_year_on_books" />
+      <item itemvalue="JUnit.BookListTest.should_display_three_default_books_after_initialization" />
+      <item itemvalue="Application.BookList" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookListTest" />
+        <item itemvalue="Application.BookList" />
+        <item itemvalue="JUnit.BookListTest.should_contain_author_and_year_on_books" />
+        <item itemvalue="JUnit.BookListTest.should_display_three_default_books_after_initialization" />
+        <item itemvalue="JUnit.BookListTest.should_display_three_books_after_return_one" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -34,18 +171,82 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1d4bd269-1c78-4811-bf2d-6632b5b72e35" name="Default Changelist" comment="" />
-      <created>1595599606879</created>
+      <changelist id="38dedb72-0c0e-49cf-83e4-af2fc9073685" name="Default Changelist" comment="" />
+      <created>1595660730924</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1595599606879</updated>
+      <updated>1595660730924</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="384" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1595599611740">
+    <state x="184" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595768500180">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state x="384" y="260" key="com.intellij.ide.util.TipDialog/0.23.1440.810@0.23.1440.810" timestamp="1595599611740" />
+    <state x="184" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.810@0.23.1440.810" timestamp="1595768500180" />
+    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1595774516074">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser/0.23.1440.810@0.23.1440.810" timestamp="1595774516074" />
+    <state x="458" y="212" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1595667590655">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state x="458" y="212" key="#com.intellij.ide.util.PackageChooserDialog/0.23.1440.810@0.23.1440.810" timestamp="1595667590655" />
+    <state width="1400" height="221" key="GridCell.Tab.0.bottom" timestamp="1595779880227">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1400" height="221" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1595779880227" />
+    <state width="1400" height="221" key="GridCell.Tab.0.center" timestamp="1595779880226">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1400" height="221" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1595779880226" />
+    <state width="1400" height="221" key="GridCell.Tab.0.left" timestamp="1595779880225">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1400" height="221" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1595779880225" />
+    <state width="1400" height="221" key="GridCell.Tab.0.right" timestamp="1595779880226">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1400" height="221" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1595779880226" />
+    <state width="1400" height="259" key="GridCell.Tab.1.bottom" timestamp="1595776364013">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1400" height="259" key="GridCell.Tab.1.bottom/0.23.1440.810@0.23.1440.810" timestamp="1595776364013" />
+    <state width="1400" height="259" key="GridCell.Tab.1.center" timestamp="1595776364013">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1400" height="259" key="GridCell.Tab.1.center/0.23.1440.810@0.23.1440.810" timestamp="1595776364013" />
+    <state width="1400" height="259" key="GridCell.Tab.1.left" timestamp="1595776364013">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1400" height="259" key="GridCell.Tab.1.left/0.23.1440.810@0.23.1440.810" timestamp="1595776364013" />
+    <state width="1400" height="259" key="GridCell.Tab.1.right" timestamp="1595776364013">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1400" height="259" key="GridCell.Tab.1.right/0.23.1440.810@0.23.1440.810" timestamp="1595776364013" />
+    <state width="1400" height="259" key="GridCell.Tab.2.bottom" timestamp="1595776364014">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1400" height="259" key="GridCell.Tab.2.bottom/0.23.1440.810@0.23.1440.810" timestamp="1595776364014" />
+    <state width="1400" height="259" key="GridCell.Tab.2.center" timestamp="1595776364014">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1400" height="259" key="GridCell.Tab.2.center/0.23.1440.810@0.23.1440.810" timestamp="1595776364014" />
+    <state width="1400" height="259" key="GridCell.Tab.2.left" timestamp="1595776364013">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1400" height="259" key="GridCell.Tab.2.left/0.23.1440.810@0.23.1440.810" timestamp="1595776364013" />
+    <state width="1400" height="259" key="GridCell.Tab.2.right" timestamp="1595776364014">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1400" height="259" key="GridCell.Tab.2.right/0.23.1440.810@0.23.1440.810" timestamp="1595776364014" />
+    <state x="208" y="23" key="SettingsEditor" timestamp="1595667555934">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state x="208" y="23" key="SettingsEditor/0.23.1440.810@0.23.1440.810" timestamp="1595667555934" />
+    <state x="470" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1595774818943">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state x="470" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.810@0.23.1440.810" timestamp="1595774818943" />
   </component>
 </project>
