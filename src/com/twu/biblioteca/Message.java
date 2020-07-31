@@ -9,4 +9,5 @@ public final class Message {
   public static final String RETURN_HINT = "Which book do you want to return?";
   public static final String RETURN_SUCCESS = "Thank you for returning the book.";
   public static final String RETURN_FAILURE = "That is not a valid book to return.";
+  public static final String VALID_OPTION = "Please select a valid option!";
 }

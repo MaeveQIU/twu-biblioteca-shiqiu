@@ -51,10 +51,10 @@ public class BookListTest {
     assertThat(BookList.printBookList().split("\n").length, is(3));
   }
 
-  @Test
-  public void should_return_false_when_book_does_not_belong_to_library() {
-    boolean isBookBelongToLibrary = BookList.isBookBelongToLibrary(GOBLET_OF_FIRE);
-    assertThat(isBookBelongToLibrary, is(false));
-  }
+//  @Test
+//  public void should_return_false_when_book_does_not_belong_to_library() {
+//    boolean isBookBelongToLibrary = BookList.isBookBelongToLibrary(GOBLET_OF_FIRE);
+//    assertThat(isBookBelongToLibrary, is(false));
+//  }
 
 }

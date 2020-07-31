@@ -24,10 +24,6 @@ public final class BookList {
     return null;
   }
 
-  public static boolean isBookBelongToLibrary(String bookName) {
-    return getBookByName(bookName) != null;
-  }
-
   public static boolean isBookAvailable(String bookName) {
     Book book = getBookByName(bookName);
     if (book != null) {

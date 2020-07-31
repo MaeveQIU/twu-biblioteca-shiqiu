@@ -50,7 +50,7 @@ public class BibliotecaApp {
                     break;
 
                 default:
-                    System.out.println("Please select a valid option!");
+                    System.out.println(Message.VALID_OPTION);
             }
         }
     }
@@ -64,11 +64,11 @@ public class BibliotecaApp {
     }
 
     public static boolean returnBook(String bookName) {
-        if (BookList.isBookBelongToLibrary(bookName)) {
-            BookList.changeBookStatus(bookName);
-            return true;
+        if (BookList.isBookAvailable(bookName)) {
+            return false;
         }
-        return false;
+        BookList.changeBookStatus(bookName);
+        return true;
     }
 
 }
