@@ -17,7 +17,13 @@ public enum Menu {
       UserDatabase.viewItem(user);
     }
   },
-  QUIT(8, Optional.empty()) {
+  VIEW_INFO(8, Optional.empty()) {
+    @Override
+    public void execute(int option, User user) {
+      UserDatabase.viewUserInfo(user);
+    }
+  },
+  QUIT(9, Optional.empty()) {
     @Override
     public void execute(int option, User user) {
       System.exit(0);

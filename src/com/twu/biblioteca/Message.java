@@ -2,7 +2,8 @@ package com.twu.biblioteca;
 
 public final class Message {
   public static final String WELCOME = "Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!";
-  public static final String MENU = "1. List of books\n2. Checkout a book\n3. Return a book\n4. List of movies\n5. Checkout a movie\n6. Return a movie\n7. View checkout books\n8. Quit";
+  public static final String MENU = "1. List of books\n2. Checkout a book\n3. Return a book\n4. List of movies\n" +
+          "5. Checkout a movie\n6. Return a movie\n7. View checkout books\n8. View my information \n9. Quit";
   public static final String CHECKOUT_HINT = "Input the item name that you want to checkout.";
   public static final String CHECKOUT_SUCCESS = "Thank you! Enjoy it.";
   public static final String CHECKOUT_FAILURE = "Sorry, this is not available.";
