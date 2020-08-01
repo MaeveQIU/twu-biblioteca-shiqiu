@@ -11,7 +11,7 @@ public class PrintCommand implements Command {
   }
 
   @Override
-  public void execute() {
+  public void execute(User user) {
     Library.print((Map<Item, Boolean>) itemList);
   }
 }

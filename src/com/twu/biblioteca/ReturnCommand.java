@@ -12,7 +12,7 @@ public class ReturnCommand implements Command {
   }
 
   @Override
-  public void execute() {
+  public void execute(User user) {
     System.out.println(Message.RETURN_HINT);
     Scanner scanner = new Scanner(System.in);
     String name = scanner.nextLine();

@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38dedb72-0c0e-49cf-83e4-af2fc9073685" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/UserDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckoutCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Message.java" afterDir="false" />
@@ -180,10 +181,10 @@
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="184" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.810@0.23.1440.810" timestamp="1595768500180" />
-    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1596274027611">
+    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1596276102569">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser/0.23.1440.810@0.23.1440.810" timestamp="1596274027611" />
+    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser/0.23.1440.810@0.23.1440.810" timestamp="1596276102569" />
     <state x="458" y="212" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1595667590655">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
@@ -196,22 +197,22 @@
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="458" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.810@0.23.1440.810" timestamp="1596203909255" />
-    <state width="1400" height="148" key="GridCell.Tab.0.bottom" timestamp="1596274681666">
+    <state width="1400" height="344" key="GridCell.Tab.0.bottom" timestamp="1596279366171">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="148" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596274681666" />
-    <state width="1400" height="148" key="GridCell.Tab.0.center" timestamp="1596274681664">
+    <state width="1400" height="344" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596279366171" />
+    <state width="1400" height="344" key="GridCell.Tab.0.center" timestamp="1596279366168">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="148" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1596274681664" />
-    <state width="1400" height="148" key="GridCell.Tab.0.left" timestamp="1596274681664">
+    <state width="1400" height="344" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1596279366168" />
+    <state width="1400" height="344" key="GridCell.Tab.0.left" timestamp="1596279366167">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="148" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1596274681664" />
-    <state width="1400" height="148" key="GridCell.Tab.0.right" timestamp="1596274681665">
+    <state width="1400" height="344" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1596279366167" />
+    <state width="1400" height="344" key="GridCell.Tab.0.right" timestamp="1596279366170">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="148" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1596274681665" />
+    <state width="1400" height="344" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1596279366170" />
     <state width="1400" height="259" key="GridCell.Tab.1.bottom" timestamp="1595776364013">
       <screen x="0" y="23" width="1440" height="810" />
     </state>

@@ -11,9 +11,15 @@ public enum Menu {
   PRINT_MOVIE(4, Optional.of(new PrintCommand(Library.getMovieList()))),
   CHECKOUT_MOVIE(5, Optional.of(new CheckoutCommand(Library.getMovieList()))),
   RETURN_MOVIE(6, Optional.of(new ReturnCommand(Library.getMovieList()))),
-  QUIT(7, Optional.empty()) {
+  VIEW_CHECKOUTS(7, Optional.empty()) {
     @Override
-    public void execute(int option) {
+    public void execute(int option, User user) {
+      UserDatabase.viewItem(user);
+    }
+  },
+  QUIT(8, Optional.empty()) {
+    @Override
+    public void execute(int option, User user) {
       System.exit(0);
     }
   };
@@ -32,7 +38,7 @@ public enum Menu {
     return Arrays.stream(Menu.values()).filter(value -> value.option == option).findFirst().get();
   }
 
-  public void execute(int option) {
-    fromOption(option).command.get().execute();
+  public void execute(int option, User user) {
+    fromOption(option).command.get().execute(user);
   }
 }

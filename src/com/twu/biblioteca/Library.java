@@ -39,7 +39,7 @@ public final class Library {
   }
 
   public static boolean returnItem(Map<Item, Boolean> itemList, String name) {
-    if (isItemAvailable(itemList, name)) {
+    if (isItemValid(itemList, name)) {
       changeItemStatus(itemList, name);
       return true;
     }
@@ -73,7 +73,10 @@ public final class Library {
 
   public static boolean isItemValid(Map<Item, Boolean> itemList, String name) {
     Item item = getItemByName(itemList, name);
-    return item != null & !itemList.get(item);
+    if (item != null) {
+      return !itemList.get(item);
+    }
+    return false;
   }
 
   public static void changeItemStatus(Map<Item, Boolean> itemList, String name) {
