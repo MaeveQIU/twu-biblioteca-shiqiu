@@ -5,10 +5,13 @@ import java.util.Arrays;
 import java.util.Optional;
 
 public enum Menu {
-  PRINT(1, Optional.of(new PrintCommand())),
-  CHECKOUT(2, Optional.of(new CheckoutCommand())),
-  RETURN(3, Optional.of(new ReturnCommand())),
-  QUIT(4, Optional.empty()) {
+  PRINT_BOOK(1, Optional.of(new PrintCommand(Library.getBookList()))),
+  CHECKOUT_BOOK(2, Optional.of(new CheckoutCommand(Library.getBookList()))),
+  RETURN_BOOK(3, Optional.of(new ReturnCommand(Library.getBookList()))),
+  PRINT_MOVIE(4, Optional.of(new PrintCommand(Library.getMovieList()))),
+  CHECKOUT_MOVIE(5, Optional.of(new CheckoutCommand(Library.getMovieList()))),
+  RETURN_MOVIE(6, Optional.of(new ReturnCommand(Library.getMovieList()))),
+  QUIT(7, Optional.empty()) {
     @Override
     public void execute(int option) {
       System.exit(0);

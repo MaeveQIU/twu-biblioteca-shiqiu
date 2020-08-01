@@ -1,16 +1,23 @@
 package com.twu.biblioteca;
 
+import java.util.Map;
 import java.util.Scanner;
 
 public class CheckoutCommand implements Command {
+
+  private Map<?, Boolean> itemList;
+
+  public CheckoutCommand(Map<?, Boolean> itemList) {
+    this.itemList = itemList;
+  }
 
   @Override
   public void execute() {
     System.out.println(Message.CHECKOUT_HINT);
     Scanner scanner = new Scanner(System.in);
-    String bookName = scanner.nextLine();
+    String name = scanner.nextLine();
 
-    if (Library.checkoutBook(bookName)) {
+    if (Library.checkoutItem((Map<Item, Boolean>) itemList, name)) {
       System.out.println(Message.CHECKOUT_SUCCESS);
     } else {
       System.out.println(Message.CHECKOUT_FAILURE);
