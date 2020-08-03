@@ -1,5 +1,13 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.resource;
 
+
+import com.twu.biblioteca.user.User;
+import com.twu.biblioteca.user.UserDatabase;
+import com.twu.biblioteca.command.CheckoutCommand;
+import com.twu.biblioteca.command.Command;
+import com.twu.biblioteca.command.PrintCommand;
+import com.twu.biblioteca.command.ReturnCommand;
+import com.twu.biblioteca.entity.Library;
 
 import java.util.Arrays;
 import java.util.Optional;
@@ -13,19 +21,19 @@ public enum Menu {
   RETURN_MOVIE(6, Optional.of(new ReturnCommand(Library.getMovieList()))),
   VIEW_CHECKOUTS(7, Optional.empty()) {
     @Override
-    public void execute(int option, User user) {
+    public void execute(User user) {
       UserDatabase.viewItem(user);
     }
   },
   VIEW_INFO(8, Optional.empty()) {
     @Override
-    public void execute(int option, User user) {
+    public void execute(User user) {
       UserDatabase.viewUserInfo(user);
     }
   },
   QUIT(9, Optional.empty()) {
     @Override
-    public void execute(int option, User user) {
+    public void execute(User user) {
       System.exit(0);
     }
   };
@@ -38,13 +46,16 @@ public enum Menu {
     this.command = command;
   }
 
-  public int getOption() { return option; }
+  public static boolean validateOption(int option) {
+    return Arrays.stream(Menu.values()).anyMatch(v -> v.option == option);
+  }
 
-  public Menu fromOption(int option) {
+  public static Menu fromOption(int option) {
     return Arrays.stream(Menu.values()).filter(value -> value.option == option).findFirst().get();
   }
 
-  public void execute(int option, User user) {
-    fromOption(option).command.get().execute(user);
+  public void execute(User user) {
+    this.command.get().execute(user);
   }
+
 }

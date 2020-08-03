@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38dedb72-0c0e-49cf-83e4-af2fc9073685" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/resource/DataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/user/UserDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/command/CheckoutCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/resource/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/resource/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/PrintCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/command/PrintCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/ReturnCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/command/ReturnCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/UserDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/user/Authenticator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +74,7 @@
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="PATTERN" value="com.twu.biblioteca.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,7 +87,7 @@
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="PATTERN" value="com.twu.biblioteca.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,11 +96,11 @@
       </method>
     </configuration>
     <configuration name="Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.Menu" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.resource.Menu" />
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="PATTERN" value="com.twu.biblioteca.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,7 +112,7 @@
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="PATTERN" value="com.twu.biblioteca.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,7 +127,7 @@
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="PATTERN" value="com.twu.biblioteca.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,10 +186,10 @@
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="184" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.810@0.23.1440.810" timestamp="1595768500180" />
-    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1596279922259">
+    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1596445455869">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser/0.23.1440.810@0.23.1440.810" timestamp="1596279922259" />
+    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser/0.23.1440.810@0.23.1440.810" timestamp="1596445455869" />
     <state x="458" y="212" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1595667590655">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
@@ -187,22 +202,22 @@
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="458" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.810@0.23.1440.810" timestamp="1596203909255" />
-    <state width="1400" height="344" key="GridCell.Tab.0.bottom" timestamp="1596282242707">
+    <state width="1400" height="344" key="GridCell.Tab.0.bottom" timestamp="1596449017494">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="344" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596282242707" />
-    <state width="1400" height="344" key="GridCell.Tab.0.center" timestamp="1596282242706">
+    <state width="1400" height="344" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596449017494" />
+    <state width="1400" height="344" key="GridCell.Tab.0.center" timestamp="1596449017492">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="344" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1596282242706" />
-    <state width="1400" height="344" key="GridCell.Tab.0.left" timestamp="1596282242705">
+    <state width="1400" height="344" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1596449017492" />
+    <state width="1400" height="344" key="GridCell.Tab.0.left" timestamp="1596449017491">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="344" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1596282242705" />
-    <state width="1400" height="344" key="GridCell.Tab.0.right" timestamp="1596282242706">
+    <state width="1400" height="344" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1596449017491" />
+    <state width="1400" height="344" key="GridCell.Tab.0.right" timestamp="1596449017493">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="344" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1596282242706" />
+    <state width="1400" height="344" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1596449017493" />
     <state width="1400" height="259" key="GridCell.Tab.1.bottom" timestamp="1595776364013">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
@@ -239,10 +254,10 @@
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="208" y="23" key="SettingsEditor/0.23.1440.810@0.23.1440.810" timestamp="1595667555934" />
-    <state x="384" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1596270281444">
+    <state x="384" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1596436986616">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state x="384" y="260" key="com.intellij.ide.util.TipDialog/0.23.1440.810@0.23.1440.810" timestamp="1596270281444" />
+    <state x="384" y="260" key="com.intellij.ide.util.TipDialog/0.23.1440.810@0.23.1440.810" timestamp="1596436986616" />
     <state x="470" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1595774818943">
       <screen x="0" y="23" width="1440" height="810" />
     </state>

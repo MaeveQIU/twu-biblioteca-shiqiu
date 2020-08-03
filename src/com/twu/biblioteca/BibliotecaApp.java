@@ -1,51 +1,48 @@
 package com.twu.biblioteca;
 
-import java.util.Arrays;
+import com.twu.biblioteca.resource.DataProvider;
+import com.twu.biblioteca.user.User;
+import com.twu.biblioteca.user.Authenticator;
+import com.twu.biblioteca.resource.Menu;
+import com.twu.biblioteca.resource.Message;
+
+import java.io.PrintStream;
 import java.util.Scanner;
 
 public class BibliotecaApp {
 
-    @SuppressWarnings("InfiniteLoopStatement")
+    private static Scanner scanner = new Scanner(System.in);
+    private static PrintStream printer = System.out;
+    private static DataProvider dataProvider = new DataProvider();
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println(Message.WELCOME);
-        System.out.println(Message.USER_LOGIN);
+        User user = login();
+        run(user);
+    }
 
-        String userCredential = scanner.nextLine();
-        User user = getUserByString(userCredential);
-        if (!UserDatabase.verifyUser(user)) {
-            System.out.println(Message.LOGIN_FAILURE);
-            System.exit(0);
-        }
+    public static User login() {
+        printer.println(Message.WELCOME + "\n" + Message.USER_LOGIN);
+        String userInput = scanner.nextLine();
+        return Authenticator.login(userInput);
+    }
 
+    @SuppressWarnings("InfiniteLoopStatement")
+    public static void run(User user) {
         while (true) {
-            System.out.println(Message.MENU);
+            printer.println(Message.MENU);
             int option = Integer.parseInt(scanner.nextLine());
 
-            if (validateOption(option)) {
-                startApplication(option, user);
+            if (Menu.validateOption(option)) {
+                executeOption(option, user);
             } else {
-                System.out.println(Message.VALID_OPTION);
+                printer.println(Message.VALID_OPTION);
             }
         }
     }
 
-    public static void startApplication(int option, User user) {
-        for (Menu value : Menu.values()) {
-            if (value.getOption() == option) {
-                value.execute(option, user);
-            }
-        }
-    }
-
-    public static boolean validateOption(int option) {
-        return Arrays.stream(Menu.values()).anyMatch(value -> value.getOption() == option);
-    }
-
-    public static User getUserByString(String credential) {
-        String number = credential.split(",")[0];
-        String password = credential.split(",")[1];
-        return new User(number, password);
+    public static void executeOption(int option, User user) {
+        Menu menu = Menu.fromOption(option);
+        menu.execute(user);
     }
 
 }

@@ -1,4 +1,9 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.command;
+
+import com.twu.biblioteca.resource.Message;
+import com.twu.biblioteca.user.User;
+import com.twu.biblioteca.entity.Item;
+import com.twu.biblioteca.entity.Library;
 
 import java.util.Map;
 import java.util.Scanner;

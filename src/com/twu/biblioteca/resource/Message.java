@@ -1,4 +1,4 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.resource;
 
 public final class Message {
   public static final String WELCOME = "Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!";
@@ -12,5 +12,6 @@ public final class Message {
   public static final String RETURN_FAILURE = "That is not a valid item to return.";
   public static final String VALID_OPTION = "Please select a valid option!";
   public static final String USER_LOGIN = "Please input your credential in the format of 'library number,password', e.g. xxx-xxxx,xxx";
+  public static final String LOGIN_SUCCESS = "You have successfully logged in.";
   public static final String LOGIN_FAILURE = "Sorry, you haven't signed up yet.";
 }

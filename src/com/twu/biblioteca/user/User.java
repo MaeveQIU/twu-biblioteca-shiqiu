@@ -1,4 +1,4 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.user;
 
 import java.util.Objects;
 
