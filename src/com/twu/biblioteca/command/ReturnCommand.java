@@ -5,27 +5,30 @@ import com.twu.biblioteca.user.User;
 import com.twu.biblioteca.entity.Item;
 import com.twu.biblioteca.entity.Library;
 
+import java.io.PrintStream;
 import java.util.Map;
 import java.util.Scanner;
 
 public class ReturnCommand implements Command {
 
-  private Map<?, Boolean> itemList;
+  private Map<? extends Item, Boolean> itemList;
 
-  public ReturnCommand(Map<?, Boolean> itemList) {
+  private Scanner scanner = new Scanner(System.in);
+  private PrintStream printer = System.out;
+
+  public ReturnCommand(Map<? extends Item, Boolean> itemList) {
     this.itemList = itemList;
   }
 
   @Override
   public void execute(User user) {
-    System.out.println(Message.RETURN_HINT);
-    Scanner scanner = new Scanner(System.in);
+    printer.println(Message.RETURN_HINT);
     String name = scanner.nextLine();
 
-    if (Library.returnItem((Map<Item, Boolean>) itemList, name)) {
-      System.out.println(Message.RETURN_SUCCESS);
+    if (Library.returnItem(itemList, name)) {
+      printer.println(Message.RETURN_SUCCESS);
     } else {
-      System.out.println(Message.RETURN_FAILURE);
+      printer.println(Message.RETURN_FAILURE);
     }
 
   }

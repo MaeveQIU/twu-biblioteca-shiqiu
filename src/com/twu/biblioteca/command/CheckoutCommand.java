@@ -6,28 +6,31 @@ import com.twu.biblioteca.user.UserDatabase;
 import com.twu.biblioteca.entity.Item;
 import com.twu.biblioteca.entity.Library;
 
+import java.io.PrintStream;
 import java.util.Map;
 import java.util.Scanner;
 
 public class CheckoutCommand implements Command {
 
-  private Map<?, Boolean> itemList;
+  private Map<? extends Item, Boolean> itemList;
 
-  public CheckoutCommand(Map<?, Boolean> itemList) {
+  private Scanner scanner = new Scanner(System.in);
+  private PrintStream printer = System.out;
+
+  public CheckoutCommand(Map<? extends Item, Boolean> itemList) {
     this.itemList = itemList;
   }
 
   @Override
   public void execute(User user) {
-    System.out.println(Message.CHECKOUT_HINT);
-    Scanner scanner = new Scanner(System.in);
+    printer.println(Message.CHECKOUT_HINT);
     String name = scanner.nextLine();
 
-    if (Library.checkoutItem((Map<Item, Boolean>) itemList, name)) {
-      UserDatabase.addItem(user, Library.getItemByName((Map<Item, Boolean>) itemList, name));
-      System.out.println(Message.CHECKOUT_SUCCESS);
+    if (Library.checkoutItem(itemList, name)) {
+      UserDatabase.addItem(user, Library.getItemByName(itemList, name));
+      printer.println(Message.CHECKOUT_SUCCESS);
     } else {
-      System.out.println(Message.CHECKOUT_FAILURE);
+      printer.println(Message.CHECKOUT_FAILURE);
     }
   }
 }

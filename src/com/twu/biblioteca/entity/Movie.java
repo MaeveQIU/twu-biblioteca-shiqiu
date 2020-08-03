@@ -1,7 +1,5 @@
 package com.twu.biblioteca.entity;
 
-import com.twu.biblioteca.entity.Item;
-
 public class Movie extends Item {
 
   private String name;

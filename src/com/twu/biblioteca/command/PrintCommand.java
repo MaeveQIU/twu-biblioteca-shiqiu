@@ -8,15 +8,15 @@ import java.util.Map;
 
 public class PrintCommand implements Command {
 
-  private Map<?, Boolean> itemList;
+  private Map<? extends Item, Boolean> itemList;
 
-  public PrintCommand(Map<?, Boolean> itemList) {
+  public PrintCommand(Map<? extends Item, Boolean> itemList) {
     this.itemList = itemList;
   }
 
   @Override
   public void execute(User user) {
-    Library.print((Map<Item, Boolean>) itemList);
+    Library.print(itemList);
   }
 }
 

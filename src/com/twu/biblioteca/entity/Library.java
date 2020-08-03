@@ -1,6 +1,8 @@
 package com.twu.biblioteca.entity;
 
+import java.io.PrintStream;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public final class Library {
@@ -8,16 +10,15 @@ public final class Library {
   private static Map<Book, Boolean> bookList;
   private static Map<Movie, Boolean> movieList;
 
-  public static void print(Map<Item, Boolean> itemList) {
-    String result = itemList.keySet()
-            .stream()
-            .filter(itemList::get)
-            .map(Object::toString)
+  private static PrintStream printer = System.out;
+
+  public static void print(Map<? extends Item, Boolean> itemList) {
+    String result = itemList.keySet().stream().filter(itemList::get).map(Object::toString)
             .collect(Collectors.joining("\n"));
-    System.out.println(result);
+    printer.println(result);
   }
 
-  public static boolean checkoutItem(Map<Item, Boolean> itemList, String name) {
+  public static boolean checkoutItem(Map<? extends Item, Boolean> itemList, String name) {
     if (isItemAvailable(itemList, name)) {
       changeItemStatus(itemList, name);
       return true;
@@ -25,7 +26,7 @@ public final class Library {
     return false;
   }
 
-  public static boolean returnItem(Map<Item, Boolean> itemList, String name) {
+  public static boolean returnItem(Map<? extends Item, Boolean> itemList, String name) {
     if (isItemValid(itemList, name)) {
       changeItemStatus(itemList, name);
       return true;
@@ -33,24 +34,16 @@ public final class Library {
     return false;
   }
 
-  public static Item getItemByName(Map<Item, Boolean> itemList, String name) {
-    for (Item item : itemList.keySet()) {
-      if (item.getName().equals(name)) {
-        return item;
-      }
-    }
-    return null;
+  public static Item getItemByName(Map<? extends Item, Boolean> itemList, String name) {
+    return itemList.keySet().stream().filter(key -> key.getName().equals(name)).findFirst().orElse(null);
   }
 
-  public static boolean isItemAvailable(Map<Item, Boolean> itemList, String name) {
+  public static boolean isItemAvailable(Map<? extends Item, Boolean> itemList, String name) {
     Item item = getItemByName(itemList, name);
-    if (item != null) {
-      return itemList.get(item);
-    }
-    return false;
+    return Optional.ofNullable(itemList.get(item)).orElse(false);
   }
 
-  public static boolean isItemValid(Map<Item, Boolean> itemList, String name) {
+  public static boolean isItemValid(Map<? extends Item, Boolean> itemList, String name) {
     Item item = getItemByName(itemList, name);
     if (item != null) {
       return !itemList.get(item);
@@ -58,11 +51,14 @@ public final class Library {
     return false;
   }
 
-  public static void changeItemStatus(Map<Item, Boolean> itemList, String name) {
-    Item item = getItemByName(itemList, name);
-    if (item != null) {
-      itemList.replace(item, !itemList.get(item));
-    }
+  public static void changeItemStatus(Map<? extends Item, Boolean> itemList, String name) {
+    Optional.ofNullable(getItemByName(itemList, name)).ifPresent((item) -> {
+      if (item.getClass().equals(Book.class)) {
+        Optional.ofNullable((Book) getItemByName(bookList, name)).ifPresent(book -> bookList.replace(book, !bookList.get(book)));
+      } else if (item.getClass().equals(Movie.class)) {
+        Optional.ofNullable((Movie) getItemByName(movieList, name)).ifPresent(movie -> movieList.replace(movie, !movieList.get(movie)));
+      }
+    });
   }
 
   public static Map<Book, Boolean> getBookList() {
@@ -79,10 +75,6 @@ public final class Library {
 
   public static void setMovieList(Map<Movie, Boolean> movieList) {
     Library.movieList = movieList;
-  }
-
-  public static void resetAll(Map<Item, Boolean> itemList) {
-    itemList.replaceAll((item, value) -> true);
   }
 
 }
