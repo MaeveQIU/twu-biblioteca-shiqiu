@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38dedb72-0c0e-49cf-83e4-af2fc9073685" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/user/UserDatabaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/user/AuthenticatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/command/CheckoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/command/CheckoutCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/command/ReturnCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/command/ReturnCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/user/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/user/Authenticator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/user/UserDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/user/UserDatabase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +56,8 @@
       <recent name="$PROJECT_DIR$/src/com/twu/biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDatabaseTest">
-    <configuration name="UserDatabaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AuthenticatorTest">
+    <configuration name="AuthenticatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -72,13 +66,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.user" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.UserDatabaseTest" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.AuthenticatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDatabaseTest.should_" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthenticatorTest.should_print_login_failure_message_with_the_wrong_credential" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -87,14 +81,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.user" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.UserDatabaseTest" />
-      <option name="METHOD_NAME" value="should_" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.AuthenticatorTest" />
+      <option name="METHOD_NAME" value="should_print_login_failure_message_with_the_wrong_credential" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDatabaseTest.should_display_nothing_when_user_has_not_checkout_item" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthenticatorTest.should_print_login_success_message" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -103,14 +97,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.user" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.UserDatabaseTest" />
-      <option name="METHOD_NAME" value="should_display_nothing_when_user_has_not_checkout_item" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.AuthenticatorTest" />
+      <option name="METHOD_NAME" value="should_print_login_success_message" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDatabaseTest.should_display_user_checkout_items" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthenticatorTest.should_print_login_success_message_with_the_right_credential" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -119,14 +113,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.user" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.UserDatabaseTest" />
-      <option name="METHOD_NAME" value="should_display_user_checkout_items" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.AuthenticatorTest" />
+      <option name="METHOD_NAME" value="should_print_login_success_message_with_the_right_credential" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDatabaseTest.should_update_checkout_items_after_return" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthenticatorTest.should_return_user_from_string" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -135,27 +129,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.user" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.UserDatabaseTest" />
-      <option name="METHOD_NAME" value="should_update_checkout_items_after_return" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.AuthenticatorTest" />
+      <option name="METHOD_NAME" value="should_return_user_from_string" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserDatabaseTest.should_" />
-      <item itemvalue="JUnit.UserDatabaseTest.should_display_user_checkout_items" />
-      <item itemvalue="JUnit.UserDatabaseTest.should_display_nothing_when_user_has_not_checkout_item" />
-      <item itemvalue="JUnit.UserDatabaseTest.should_update_checkout_items_after_return" />
-      <item itemvalue="JUnit.UserDatabaseTest" />
+      <item itemvalue="JUnit.AuthenticatorTest.should_return_user_from_string" />
+      <item itemvalue="JUnit.AuthenticatorTest.should_print_login_success_message" />
+      <item itemvalue="JUnit.AuthenticatorTest.should_print_login_success_message_with_the_right_credential" />
+      <item itemvalue="JUnit.AuthenticatorTest.should_print_login_failure_message_with_the_wrong_credential" />
+      <item itemvalue="JUnit.AuthenticatorTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserDatabaseTest" />
-        <item itemvalue="JUnit.UserDatabaseTest.should_update_checkout_items_after_return" />
-        <item itemvalue="JUnit.UserDatabaseTest.should_display_nothing_when_user_has_not_checkout_item" />
-        <item itemvalue="JUnit.UserDatabaseTest.should_display_user_checkout_items" />
-        <item itemvalue="JUnit.UserDatabaseTest.should_" />
+        <item itemvalue="JUnit.AuthenticatorTest" />
+        <item itemvalue="JUnit.AuthenticatorTest.should_print_login_failure_message_with_the_wrong_credential" />
+        <item itemvalue="JUnit.AuthenticatorTest.should_print_login_success_message_with_the_right_credential" />
+        <item itemvalue="JUnit.AuthenticatorTest.should_print_login_success_message" />
+        <item itemvalue="JUnit.AuthenticatorTest.should_return_user_from_string" />
       </list>
     </recent_temporary>
   </component>
@@ -205,22 +199,22 @@
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="458" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.810@0.23.1440.810" timestamp="1596203909255" />
-    <state width="1400" height="194" key="GridCell.Tab.0.bottom" timestamp="1596529050170">
+    <state width="1400" height="194" key="GridCell.Tab.0.bottom" timestamp="1596529671076">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="194" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596529050170" />
-    <state width="1400" height="194" key="GridCell.Tab.0.center" timestamp="1596529050169">
+    <state width="1400" height="194" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596529671076" />
+    <state width="1400" height="194" key="GridCell.Tab.0.center" timestamp="1596529671074">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="194" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1596529050169" />
-    <state width="1400" height="194" key="GridCell.Tab.0.left" timestamp="1596529050169">
+    <state width="1400" height="194" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1596529671074" />
+    <state width="1400" height="194" key="GridCell.Tab.0.left" timestamp="1596529671073">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="194" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1596529050169" />
-    <state width="1400" height="194" key="GridCell.Tab.0.right" timestamp="1596529050170">
+    <state width="1400" height="194" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1596529671073" />
+    <state width="1400" height="194" key="GridCell.Tab.0.right" timestamp="1596529671075">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="194" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1596529050170" />
+    <state width="1400" height="194" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1596529671075" />
     <state width="1400" height="259" key="GridCell.Tab.1.bottom" timestamp="1596527910514">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
@@ -261,10 +255,10 @@
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="384" y="260" key="com.intellij.ide.util.TipDialog/0.23.1440.810@0.23.1440.810" timestamp="1596512292447" />
-    <state x="470" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596527244783">
+    <state x="470" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596529131403">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state x="470" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.810@0.23.1440.810" timestamp="1596527244783" />
+    <state x="470" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.810@0.23.1440.810" timestamp="1596529131403" />
     <state x="0" y="34" key="new project wizard" timestamp="1596476306201">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
