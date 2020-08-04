@@ -10,12 +10,10 @@ public final class Library {
   private static Map<Book, Boolean> bookList;
   private static Map<Movie, Boolean> movieList;
 
-  private static PrintStream printer = System.out;
-
   public static void print(Map<? extends Item, Boolean> itemList) {
     String result = itemList.keySet().stream().filter(itemList::get).map(Object::toString)
             .collect(Collectors.joining("\n"));
-    printer.println(result);
+    System.out.println(result);
   }
 
   public static boolean checkoutItem(Map<? extends Item, Boolean> itemList, String name) {

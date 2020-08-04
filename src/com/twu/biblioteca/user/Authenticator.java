@@ -2,13 +2,11 @@ package com.twu.biblioteca.user;
 
 import com.twu.biblioteca.resource.Message;
 
-import java.io.PrintStream;
 import java.util.Optional;
 import java.util.Set;
 
 public final class Authenticator {
 
-  private static PrintStream printer = System.out;
   private static Set<User> userList;
 
   static {
@@ -18,11 +16,11 @@ public final class Authenticator {
   public static User login(String userInput) {
     User user = getUserByString(userInput);
     Optional.ofNullable(user).orElseGet(() -> {
-      printer.println(Message.LOGIN_FAILURE);
+      System.out.println(Message.LOGIN_FAILURE);
       System.exit(0);
       return null;
     });
-    printer.println(Message.LOGIN_SUCCESS);
+    System.out.println(Message.LOGIN_SUCCESS);
     return user;
   }
 
