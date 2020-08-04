@@ -3,6 +3,7 @@ package com.twu.biblioteca.user;
 import com.twu.biblioteca.resource.Message;
 
 import java.io.PrintStream;
+import java.util.Optional;
 import java.util.Set;
 
 public final class Authenticator {
@@ -16,31 +17,19 @@ public final class Authenticator {
 
   public static User login(String userInput) {
     User user = getUserByString(userInput);
-    if (user != null) {
-      if (!verifyUser(user)) {
-        printer.println(Message.LOGIN_FAILURE);
-        System.exit(0);
-      } else {
-        printer.println(Message.LOGIN_SUCCESS);
-        return user;
-      }
-    }
-    return null;
+    Optional.ofNullable(user).orElseGet(() -> {
+      printer.println(Message.LOGIN_FAILURE);
+      System.exit(0);
+      return null;
+    });
+    printer.println(Message.LOGIN_SUCCESS);
+    return user;
   }
 
   public static User getUserByString(String userInput) {
     String[] infoList = userInput.split(",");
     User tempUser = new User(infoList[0], infoList[1]);
-    for (User user : userList) {
-      if (user.equals(tempUser)) {
-        return user;
-      }
-    }
-    return null;
-  }
-
-  public static boolean verifyUser(User user) {
-    return userList.contains(user);
+    return userList.stream().filter(user -> user.equals(tempUser)).findFirst().orElse(null);
   }
 
 }

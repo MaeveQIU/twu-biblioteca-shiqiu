@@ -31,8 +31,5 @@ public final class UserDatabase {
 
   public static Set<User> getUserDatabase() { return userDatabase.keySet(); }
 
-  public static void setUserDatabase(Map<User, List<Item>> userList) {
-    UserDatabase.userDatabase = userList;
-  }
-
+  public static void setUserDatabase(Map<User, List<Item>> userDatabase) { UserDatabase.userDatabase = userDatabase; }
 }
