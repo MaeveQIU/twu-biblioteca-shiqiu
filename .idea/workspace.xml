@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38dedb72-0c0e-49cf-83e4-af2fc9073685" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/entity/LibraryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/user/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/user/Authenticator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/user/UserDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/user/UserDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +14,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -43,21 +43,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.twu.biblioteca.entity" />
       <recent name="com.twu.biblioteca" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/com/twu/biblioteca" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.twu.biblioteca" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/twu/biblioteca" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
+  <component name="RunManager" selected="JUnit.LibraryTest">
+    <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -65,13 +65,91 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.entity.LibraryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibraryTest.should_" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.entity.LibraryTest" />
+      <option name="METHOD_NAME" value="should_" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.should_change_status_after_checkout_and_return" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.entity.LibraryTest" />
+      <option name="METHOD_NAME" value="should_change_status_after_checkout_and_return" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.should_return_false_when_item_have_not_been_checkout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.entity.LibraryTest" />
+      <option name="METHOD_NAME" value="should_return_false_when_item_have_not_been_checkout" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.should_return_one_less_item_after_checkout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.entity.LibraryTest" />
+      <option name="METHOD_NAME" value="should_return_one_less_item_after_checkout" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.LibraryTest.should_return_one_less_item_after_checkout" />
+      <item itemvalue="JUnit.LibraryTest.should_change_status_after_checkout_and_return" />
+      <item itemvalue="JUnit.LibraryTest.should_" />
+      <item itemvalue="JUnit.LibraryTest.should_return_false_when_item_have_not_been_checkout" />
+      <item itemvalue="JUnit.LibraryTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BibliotecaApp" />
+        <item itemvalue="JUnit.LibraryTest" />
+        <item itemvalue="JUnit.LibraryTest.should_return_false_when_item_have_not_been_checkout" />
+        <item itemvalue="JUnit.LibraryTest.should_" />
+        <item itemvalue="JUnit.LibraryTest.should_change_status_after_checkout_and_return" />
+        <item itemvalue="JUnit.LibraryTest.should_return_one_less_item_after_checkout" />
       </list>
     </recent_temporary>
   </component>
@@ -105,10 +183,10 @@
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="184" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.810@0.23.1440.810" timestamp="1596519497655" />
-    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1596517084352">
+    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1596524572479">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser/0.23.1440.810@0.23.1440.810" timestamp="1596517084352" />
+    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser/0.23.1440.810@0.23.1440.810" timestamp="1596524572479" />
     <state x="458" y="212" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1595667590655">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
@@ -121,22 +199,22 @@
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="458" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.810@0.23.1440.810" timestamp="1596203909255" />
-    <state width="1400" height="387" key="GridCell.Tab.0.bottom" timestamp="1596519585322">
+    <state width="1400" height="194" key="GridCell.Tab.0.bottom" timestamp="1596527154146">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="387" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596519585322" />
-    <state width="1400" height="387" key="GridCell.Tab.0.center" timestamp="1596519585320">
+    <state width="1400" height="194" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596527154146" />
+    <state width="1400" height="194" key="GridCell.Tab.0.center" timestamp="1596527154145">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="387" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1596519585320" />
-    <state width="1400" height="387" key="GridCell.Tab.0.left" timestamp="1596519585319">
+    <state width="1400" height="194" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1596527154145" />
+    <state width="1400" height="194" key="GridCell.Tab.0.left" timestamp="1596527154145">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="387" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1596519585319" />
-    <state width="1400" height="387" key="GridCell.Tab.0.right" timestamp="1596519585321">
+    <state width="1400" height="194" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1596527154145" />
+    <state width="1400" height="194" key="GridCell.Tab.0.right" timestamp="1596527154146">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="387" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1596519585321" />
+    <state width="1400" height="194" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1596527154146" />
     <state width="1400" height="259" key="GridCell.Tab.1.bottom" timestamp="1595776364013">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
@@ -177,10 +255,10 @@
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="384" y="260" key="com.intellij.ide.util.TipDialog/0.23.1440.810@0.23.1440.810" timestamp="1596512292447" />
-    <state x="470" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1595774818943">
+    <state x="470" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596524006820">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state x="470" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.810@0.23.1440.810" timestamp="1595774818943" />
+    <state x="470" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.810@0.23.1440.810" timestamp="1596524006820" />
     <state x="0" y="34" key="new project wizard" timestamp="1596476306201">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
