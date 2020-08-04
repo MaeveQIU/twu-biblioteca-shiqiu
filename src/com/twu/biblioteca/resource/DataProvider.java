@@ -7,7 +7,9 @@ import com.twu.biblioteca.entity.Movie;
 import com.twu.biblioteca.user.User;
 import com.twu.biblioteca.user.UserDatabase;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class DataProvider {
@@ -18,11 +20,10 @@ public class DataProvider {
   }
 
   public void initUserDatabase() {
-    Map<User, Item> userDatabase = new HashMap<>();
-    userDatabase.put(new User("000-0001", "password", "Alex", "alex@gmail.com", "111-1111"), null);
-    userDatabase.put(new User("000-0002", "password"), null);
-    userDatabase.put(new User("000-0003", "password"), null);
-
+    Map<User, List<Item>> userDatabase = new HashMap<>();
+    userDatabase.put(new User("000-0001", "password", "Alex", "alex@gmail.com", "111-1111"), new ArrayList<>());
+    userDatabase.put(new User("000-0002", "password"), new ArrayList<>());
+    userDatabase.put(new User("000-0003", "password"), new ArrayList<>());
     UserDatabase.setUserDatabase(userDatabase);
   }
 

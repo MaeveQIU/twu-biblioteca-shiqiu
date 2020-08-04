@@ -1,5 +1,7 @@
 package com.twu.biblioteca.entity;
 
+import java.util.Objects;
+
 public class Book extends Item {
 
   private String name;
@@ -14,6 +16,21 @@ public class Book extends Item {
 
   public String getName() {
     return name;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Book book = (Book) o;
+    return year == book.year &&
+            Objects.equals(name, book.name) &&
+            Objects.equals(author, book.author);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(name, author, year);
   }
 
   @Override

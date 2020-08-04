@@ -4,6 +4,7 @@ import com.twu.biblioteca.resource.Message;
 import com.twu.biblioteca.user.User;
 import com.twu.biblioteca.entity.Item;
 import com.twu.biblioteca.entity.Library;
+import com.twu.biblioteca.user.UserDatabase;
 
 import java.io.PrintStream;
 import java.util.Map;
@@ -26,6 +27,7 @@ public class ReturnCommand implements Command {
     String name = scanner.nextLine();
 
     if (Library.returnItem(itemList, name)) {
+      UserDatabase.removeItem(user, Library.getItemByName(itemList, name));
       printer.println(Message.RETURN_SUCCESS);
     } else {
       printer.println(Message.RETURN_FAILURE);

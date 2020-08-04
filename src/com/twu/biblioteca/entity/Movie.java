@@ -1,5 +1,7 @@
 package com.twu.biblioteca.entity;
 
+import java.util.Objects;
+
 public class Movie extends Item {
 
   private String name;
@@ -16,6 +18,22 @@ public class Movie extends Item {
 
   public String getName() {
     return name;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Movie movie = (Movie) o;
+    return year == movie.year &&
+            Objects.equals(name, movie.name) &&
+            Objects.equals(director, movie.director) &&
+            Objects.equals(rating, movie.rating);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(name, year, director, rating);
   }
 
   @Override

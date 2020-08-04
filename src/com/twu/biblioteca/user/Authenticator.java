@@ -11,7 +11,7 @@ public final class Authenticator {
   private static Set<User> userList;
 
   static {
-    userList = UserDatabase.getUserDatabase().keySet();
+    userList = UserDatabase.getUserDatabase();
   }
 
   public static User login(String userInput) {
