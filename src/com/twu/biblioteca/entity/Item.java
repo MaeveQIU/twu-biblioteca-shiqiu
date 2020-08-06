@@ -1,7 +1,7 @@
 package com.twu.biblioteca.entity;
 
-public abstract class Item {
+public interface Item {
 
-  public abstract String getName();
+  String getName();
 
 }

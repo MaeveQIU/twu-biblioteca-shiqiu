@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38dedb72-0c0e-49cf-83e4-af2fc9073685" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/user/AuthenticatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Movie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +59,20 @@
       <recent name="$PROJECT_DIR$/src/com/twu/biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AuthenticatorTest">
+  <component name="RunManager" selected="Application.BibliotecaApp">
+    <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AuthenticatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
@@ -88,23 +104,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthenticatorTest.should_print_login_success_message" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.user.*" />
+          <option name="PATTERN" value="com.twu.biblioteca.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca.user" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.AuthenticatorTest" />
-      <option name="METHOD_NAME" value="should_print_login_success_message" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.entity.LibraryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthenticatorTest.should_print_login_success_message_with_the_right_credential" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDatabaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -113,43 +128,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.user" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.AuthenticatorTest" />
-      <option name="METHOD_NAME" value="should_print_login_success_message_with_the_right_credential" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthenticatorTest.should_return_user_from_string" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TWU_Biblioteca-master" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca.user" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.AuthenticatorTest" />
-      <option name="METHOD_NAME" value="should_return_user_from_string" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.user.UserDatabaseTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AuthenticatorTest.should_return_user_from_string" />
-      <item itemvalue="JUnit.AuthenticatorTest.should_print_login_success_message" />
-      <item itemvalue="JUnit.AuthenticatorTest.should_print_login_success_message_with_the_right_credential" />
       <item itemvalue="JUnit.AuthenticatorTest.should_print_login_failure_message_with_the_wrong_credential" />
       <item itemvalue="JUnit.AuthenticatorTest" />
+      <item itemvalue="JUnit.LibraryTest" />
+      <item itemvalue="JUnit.UserDatabaseTest" />
+      <item itemvalue="Application.BibliotecaApp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BibliotecaApp" />
+        <item itemvalue="JUnit.UserDatabaseTest" />
         <item itemvalue="JUnit.AuthenticatorTest" />
+        <item itemvalue="JUnit.LibraryTest" />
         <item itemvalue="JUnit.AuthenticatorTest.should_print_login_failure_message_with_the_wrong_credential" />
-        <item itemvalue="JUnit.AuthenticatorTest.should_print_login_success_message_with_the_right_credential" />
-        <item itemvalue="JUnit.AuthenticatorTest.should_print_login_success_message" />
-        <item itemvalue="JUnit.AuthenticatorTest.should_return_user_from_string" />
       </list>
     </recent_temporary>
   </component>
@@ -199,62 +197,62 @@
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="458" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.810@0.23.1440.810" timestamp="1596203909255" />
-    <state width="1400" height="194" key="GridCell.Tab.0.bottom" timestamp="1596529671076">
+    <state width="1400" height="194" key="GridCell.Tab.0.bottom" timestamp="1596714666232">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="194" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596529671076" />
-    <state width="1400" height="194" key="GridCell.Tab.0.center" timestamp="1596529671074">
+    <state width="1400" height="194" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596714666231" />
+    <state width="1400" height="194" key="GridCell.Tab.0.center" timestamp="1596714666230">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="194" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1596529671074" />
-    <state width="1400" height="194" key="GridCell.Tab.0.left" timestamp="1596529671073">
+    <state width="1400" height="194" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1596714666230" />
+    <state width="1400" height="194" key="GridCell.Tab.0.left" timestamp="1596714666230">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="194" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1596529671073" />
-    <state width="1400" height="194" key="GridCell.Tab.0.right" timestamp="1596529671075">
+    <state width="1400" height="194" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1596714666230" />
+    <state width="1400" height="194" key="GridCell.Tab.0.right" timestamp="1596714666231">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="194" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1596529671075" />
-    <state width="1400" height="259" key="GridCell.Tab.1.bottom" timestamp="1596527910514">
+    <state width="1400" height="194" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1596714666231" />
+    <state width="1400" height="259" key="GridCell.Tab.1.bottom" timestamp="1596529750732">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="259" key="GridCell.Tab.1.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596527910514" />
-    <state width="1400" height="259" key="GridCell.Tab.1.center" timestamp="1596527910513">
+    <state width="1400" height="259" key="GridCell.Tab.1.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596529750732" />
+    <state width="1400" height="259" key="GridCell.Tab.1.center" timestamp="1596529750732">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="259" key="GridCell.Tab.1.center/0.23.1440.810@0.23.1440.810" timestamp="1596527910513" />
-    <state width="1400" height="259" key="GridCell.Tab.1.left" timestamp="1596527910513">
+    <state width="1400" height="259" key="GridCell.Tab.1.center/0.23.1440.810@0.23.1440.810" timestamp="1596529750732" />
+    <state width="1400" height="259" key="GridCell.Tab.1.left" timestamp="1596529750731">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="259" key="GridCell.Tab.1.left/0.23.1440.810@0.23.1440.810" timestamp="1596527910513" />
-    <state width="1400" height="259" key="GridCell.Tab.1.right" timestamp="1596527910514">
+    <state width="1400" height="259" key="GridCell.Tab.1.left/0.23.1440.810@0.23.1440.810" timestamp="1596529750731" />
+    <state width="1400" height="259" key="GridCell.Tab.1.right" timestamp="1596529750732">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="259" key="GridCell.Tab.1.right/0.23.1440.810@0.23.1440.810" timestamp="1596527910514" />
-    <state width="1400" height="259" key="GridCell.Tab.2.bottom" timestamp="1596527910515">
+    <state width="1400" height="259" key="GridCell.Tab.1.right/0.23.1440.810@0.23.1440.810" timestamp="1596529750732" />
+    <state width="1400" height="259" key="GridCell.Tab.2.bottom" timestamp="1596529750733">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="259" key="GridCell.Tab.2.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596527910515" />
-    <state width="1400" height="259" key="GridCell.Tab.2.center" timestamp="1596527910515">
+    <state width="1400" height="259" key="GridCell.Tab.2.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596529750733" />
+    <state width="1400" height="259" key="GridCell.Tab.2.center" timestamp="1596529750732">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="259" key="GridCell.Tab.2.center/0.23.1440.810@0.23.1440.810" timestamp="1596527910515" />
-    <state width="1400" height="259" key="GridCell.Tab.2.left" timestamp="1596527910514">
+    <state width="1400" height="259" key="GridCell.Tab.2.center/0.23.1440.810@0.23.1440.810" timestamp="1596529750732" />
+    <state width="1400" height="259" key="GridCell.Tab.2.left" timestamp="1596529750732">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="259" key="GridCell.Tab.2.left/0.23.1440.810@0.23.1440.810" timestamp="1596527910514" />
-    <state width="1400" height="259" key="GridCell.Tab.2.right" timestamp="1596527910515">
+    <state width="1400" height="259" key="GridCell.Tab.2.left/0.23.1440.810@0.23.1440.810" timestamp="1596529750732" />
+    <state width="1400" height="259" key="GridCell.Tab.2.right" timestamp="1596529750732">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state width="1400" height="259" key="GridCell.Tab.2.right/0.23.1440.810@0.23.1440.810" timestamp="1596527910515" />
+    <state width="1400" height="259" key="GridCell.Tab.2.right/0.23.1440.810@0.23.1440.810" timestamp="1596529750732" />
     <state x="208" y="23" key="SettingsEditor" timestamp="1595667555934">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="208" y="23" key="SettingsEditor/0.23.1440.810@0.23.1440.810" timestamp="1595667555934" />
-    <state x="384" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1596512292447">
+    <state x="384" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1596714537518">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state x="384" y="260" key="com.intellij.ide.util.TipDialog/0.23.1440.810@0.23.1440.810" timestamp="1596512292447" />
+    <state x="384" y="260" key="com.intellij.ide.util.TipDialog/0.23.1440.810@0.23.1440.810" timestamp="1596714537518" />
     <state x="470" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596529131403">
       <screen x="0" y="23" width="1440" height="810" />
     </state>

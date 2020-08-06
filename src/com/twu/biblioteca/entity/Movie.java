@@ -2,7 +2,7 @@ package com.twu.biblioteca.entity;
 
 import java.util.Objects;
 
-public class Movie extends Item {
+public class Movie implements Item {
 
   private String name;
   private int year;
